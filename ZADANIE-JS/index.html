@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System wypożyczania samochodów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="strona">
+        <header class="naglowek">
+            <h1>System wypożyczania samochodów</h1>
+        </header>
+
+        <section class="sekcja-statystyk">
+            <div class="statystyki">
+                <div class="karta-statystyki">
+                    <p class="etykieta-statystyki">Wolne samochody</p>
+                    <p class="wartosc-statystyki" id="liczba-wolnych">0</p>
+                </div>
+                <div class="karta-statystyki">
+                    <p class="etykieta-statystyki">Wybrane samochody</p>
+                    <p class="wartosc-statystyki" id="liczba-wybranych">0</p>
+                </div>
+                <div class="karta-statystyki">
+                    <p class="etykieta-statystyki">Wypożyczone samochody</p>
+                    <p class="wartosc-statystyki" id="liczba-wypozyczonych">0</p>
+                </div>
+                <div class="karta-statystyki">
+                    <p class="etykieta-statystyki">Łączna cena wybranych</p>
+                    <p class="wartosc-statystyki" id="laczna-cena">0 zł</p>
+                </div>
+            </div>
+        </section>
+
+        <main class="uklad-glowny">
+            <aside class="panel-boczny">
+                <section class="karta-panelu">
+                    <h2>Podgląd samochodu</h2>
+                    <div id="podglad-samochodu" class="podglad-samochodu"></div>
+                </section>
+
+                <section class="karta-panelu">
+                    <h2>Formularz wypożyczenia</h2>
+                    <form id="formularz-wypozyczenia" class="formularz">
+                        <label for="nazwa-klienta">Imię lub nazwa rezerwacji</label>
+                        <input type="text" id="nazwa-klienta" placeholder="Np. Jan Kowalski">
+
+                        <label for="rodzaj-wypozyczenia">Rodzaj wypożyczenia</label>
+                        <select id="rodzaj-wypozyczenia">
+                            <option value="standard">Standard 1 dzień</option>
+                            <option value="weekend">Weekend 2 dni</option>
+                            <option value="premium">Premium 3 dni</option>
+                        </select>
+
+                        <button type="submit" class="glowny-przycisk">Wypożycz wybrane samochody</button>
+                    </form>
+                </section>
+
+                <section class="karta-panelu">
+                    <h2>Anulowanie wypożyczenia</h2>
+                    <label for="numer-anulowania">Numer samochodu</label>
+                    <input type="number" id="numer-anulowania" min="1" max="10" placeholder="Podaj numer samochodu">
+
+                    <div class="przyciski-anulowania">
+                        <button type="button" id="anuluj-po-numerze" class="dodatkowy-przycisk">Anuluj po numerze</button>
+                    </div>
+
+                    <p id="informacja-o-anulowaniu" class="informacja-o-anulowaniu">
+                        Aby anulować wypożyczenie, podaj numer samochodu i kliknij przycisk.
+                    </p>
+                </section>
+
+                <section class="karta-panelu">
+                    <h2>Komunikat</h2>
+                    <div id="komunikat" class="komunikat komunikat-info">
+                        Wybierz samochód, aby zobaczyć szczegóły.
+                    </div>
+                </section>
+            </aside>
+
+            <section class="sekcja-samochodow">
+                <div class="naglowek-sekcji">
+                    <h2>Dostępne samochody</h2>
+                    <p>Kliknij wolny samochód, aby go wybrać. Wypożyczony samochód możesz anulować po numerze.</p>
+                </div>
+                <div id="lista-samochodow" class="siatka-samochodow"></div>
+            </section>
+        </main>
+
+        <section class="sekcja-legendy">
+            <div class="legenda">
+                <h2>Legenda</h2>
+                <div class="elementy-legendy">
+                    <div class="element-legendy">
+                        <span class="kolor-box wolny-box"></span>
+                        <span>Wolny</span>
+                    </div>
+                    <div class="element-legendy">
+                        <span class="kolor-box wybrany-box"></span>
+                        <span>Wybrany</span>
+                    </div>
+                    <div class="element-legendy">
+                        <span class="kolor-box wypozyczony-box"></span>
+                        <span>Wypożyczony</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

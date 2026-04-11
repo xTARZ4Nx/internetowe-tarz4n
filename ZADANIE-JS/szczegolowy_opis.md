@@ -1,0 +1,896 @@
+## index.html
+
+- Linia 1: Deklaracja typu dokumentu HTML5 `<!DOCTYPE html>`.
+- Linia 2: Otwarcie elementu `html` z atrybutem `lang="pl"`, który określa język strony.
+- Linia 3: Otwarcie sekcji `head`, w której znajdują się metadane i podpięte zasoby strony.
+- Linia 4: Meta tag ustawiający kodowanie znaków na UTF-8.
+- Linia 5: Meta tag `viewport` odpowiadający za poprawne skalowanie strony na urządzeniach mobilnych.
+- Linia 6: Tytuł strony widoczny na karcie przeglądarki.
+- Linia 7: Podłączenie arkusza stylów `style.css`.
+- Linia 8: Zamknięcie sekcji `head`.
+- Linia 9: Otwarcie sekcji `body`, czyli widocznej części strony.
+- Linia 10: Główny kontener strony z klasą `strona`.
+- Linia 11: Otwarcie nagłówka strony `header` z klasą `naglowek`.
+- Linia 12: Nagłówek pierwszego poziomu `h1` z tytułem aplikacji.
+- Linia 13: Zamknięcie elementu `header`.
+- Linia 14: Pusta linia poprawiająca czytelność kodu.
+- Linia 15: Otwarcie sekcji statystyk `sekcja-statystyk`.
+- Linia 16: Kontener `statystyki`, w którym będą wyświetlane karty z liczbami.
+- Linia 17: Otwarcie pierwszej karty statystyki.
+- Linia 18: Tekst etykiety `Wolne samochody`.
+- Linia 19: Element z id `liczba-wolnych`, do którego JavaScript wpisuje liczbę wolnych samochodów.
+- Linia 20: Zamknięcie pierwszej karty statystyki.
+- Linia 21: Otwarcie drugiej karty statystyki.
+- Linia 22: Tekst etykiety `Wybrane samochody`.
+- Linia 23: Element z id `liczba-wybranych`, do którego JavaScript wpisuje liczbę wybranych samochodów.
+- Linia 24: Zamknięcie drugiej karty statystyki.
+- Linia 25: Otwarcie trzeciej karty statystyki.
+- Linia 26: Tekst etykiety `Wypożyczone samochody`.
+- Linia 27: Element z id `liczba-wypozyczonych`, do którego JavaScript wpisuje liczbę wypożyczonych samochodów.
+- Linia 28: Zamknięcie trzeciej karty statystyki.
+- Linia 29: Otwarcie czwartej karty statystyki.
+- Linia 30: Tekst etykiety `Łączna cena wybranych`.
+- Linia 31: Element z id `laczna-cena`, do którego JavaScript wpisuje sumę cen wybranych samochodów.
+- Linia 32: Zamknięcie czwartej karty statystyki.
+- Linia 33: Zamknięcie kontenera `statystyki`.
+- Linia 34: Zamknięcie sekcji statystyk.
+- Linia 35: Pusta linia poprawiająca czytelność kodu.
+- Linia 36: Otwarcie głównego układu strony `main` z klasą `uklad-glowny`.
+- Linia 37: Otwarcie panelu bocznego `aside` z klasą `panel-boczny`.
+- Linia 38: Otwarcie pierwszej karty panelu.
+- Linia 39: Nagłówek sekcji `Podgląd samochodu`.
+- Linia 40: Pusty kontener `podglad-samochodu`, do którego JavaScript wstawia zdjęcie i dane wybranego auta.
+- Linia 41: Zamknięcie pierwszej karty panelu.
+- Linia 42: Pusta linia poprawiająca czytelność kodu.
+- Linia 43: Otwarcie drugiej karty panelu.
+- Linia 44: Nagłówek sekcji `Formularz wypożyczenia`.
+- Linia 45: Otwarcie formularza z id `formularz-wypozyczenia`.
+- Linia 46: Etykieta pola dla imienia lub nazwy rezerwacji.
+- Linia 47: Pole tekstowe `input` do wpisania imienia lub nazwy rezerwacji.
+- Linia 48: Pusta linia poprawiająca czytelność kodu.
+- Linia 49: Etykieta listy wyboru rodzaju wypożyczenia.
+- Linia 50: Otwarcie listy `select` z id `rodzaj-wypozyczenia`.
+- Linia 51: Opcja `Standard 1 dzień` o wartości `standard`.
+- Linia 52: Opcja `Weekend 2 dni` o wartości `weekend`.
+- Linia 53: Opcja `Premium 3 dni` o wartości `premium`.
+- Linia 54: Zamknięcie listy `select`.
+- Linia 55: Pusta linia poprawiająca czytelność kodu.
+- Linia 56: Przycisk wysłania formularza, który wypożycza wybrane samochody.
+- Linia 57: Zamknięcie formularza.
+- Linia 58: Zamknięcie drugiej karty panelu.
+- Linia 59: Pusta linia poprawiająca czytelność kodu.
+- Linia 60: Otwarcie trzeciej karty panelu.
+- Linia 61: Nagłówek sekcji `Anulowanie wypożyczenia`.
+- Linia 62: Etykieta pola numeru samochodu.
+- Linia 63: Pole `input type="number"` do wpisania numeru samochodu od 1 do 10.
+- Linia 64: Pusta linia poprawiająca czytelność kodu.
+- Linia 65: Kontener na przycisk anulowania.
+- Linia 66: Przycisk `Anuluj po numerze`, który uruchamia anulowanie wypożyczenia po wpisanym numerze.
+- Linia 67: Zamknięcie kontenera z przyciskiem.
+- Linia 68: Pusta linia poprawiająca czytelność kodu.
+- Linia 69: Otwarcie akapitu z informacją o anulowaniu.
+- Linia 70: Tekst instrukcji wyjaśniający, jak anulować wypożyczenie.
+- Linia 71: Zamknięcie akapitu.
+- Linia 72: Zamknięcie trzeciej karty panelu.
+- Linia 73: Pusta linia poprawiająca czytelność kodu.
+- Linia 74: Otwarcie czwartej karty panelu.
+- Linia 75: Nagłówek sekcji `Komunikat`.
+- Linia 76: Otwarcie elementu komunikatu z id `komunikat`.
+- Linia 77: Domyślny tekst komunikatu zachęcający do wybrania samochodu.
+- Linia 78: Zamknięcie elementu komunikatu.
+- Linia 79: Zamknięcie czwartej karty panelu.
+- Linia 80: Zamknięcie elementu `aside`.
+- Linia 81: Pusta linia poprawiająca czytelność kodu.
+- Linia 82: Otwarcie sekcji z listą samochodów.
+- Linia 83: Kontener nagłówka sekcji samochodów.
+- Linia 84: Nagłówek `Dostępne samochody`.
+- Linia 85: Krótka instrukcja obsługi wyboru i anulowania wypożyczeń.
+- Linia 86: Zamknięcie kontenera nagłówka sekcji.
+- Linia 87: Pusty kontener `lista-samochodow`, do którego JavaScript generuje karty samochodów.
+- Linia 88: Zamknięcie sekcji samochodów.
+- Linia 89: Zamknięcie elementu `main`.
+- Linia 90: Pusta linia poprawiająca czytelność kodu.
+- Linia 91: Otwarcie sekcji legendy.
+- Linia 92: Kontener legendy.
+- Linia 93: Nagłówek sekcji `Legenda`.
+- Linia 94: Kontener na elementy legendy.
+- Linia 95: Otwarcie pierwszego elementu legendy.
+- Linia 96: Kolorowy kwadrat odpowiadający stanowi `wolny`.
+- Linia 97: Tekst `Wolny`.
+- Linia 98: Zamknięcie pierwszego elementu legendy.
+- Linia 99: Otwarcie drugiego elementu legendy.
+- Linia 100: Kolorowy kwadrat odpowiadający stanowi `wybrany`.
+- Linia 101: Tekst `Wybrany`.
+- Linia 102: Zamknięcie drugiego elementu legendy.
+- Linia 103: Otwarcie trzeciego elementu legendy.
+- Linia 104: Kolorowy kwadrat odpowiadający stanowi `wypożyczony`.
+- Linia 105: Tekst `Wypożyczony`.
+- Linia 106: Zamknięcie trzeciego elementu legendy.
+- Linia 107: Zamknięcie kontenera `elementy-legendy`.
+- Linia 108: Zamknięcie kontenera `legenda`.
+- Linia 109: Zamknięcie sekcji legendy.
+- Linia 110: Zamknięcie głównego kontenera `strona`.
+- Linia 111: Pusta linia poprawiająca czytelność kodu.
+- Linia 112: Podłączenie skryptu `script.js`.
+- Linia 113: Zamknięcie elementu `body`.
+- Linia 114: Zamknięcie elementu `html`.
+- Linia 115: Pusta linia na końcu pliku.
+
+## style.css
+
+- Linia 1: Otwarcie reguły uniwersalnego selektora `*`.
+- Linia 2: Deklaracja `box-sizing: border-box`, dzięki której padding i border wliczają się do szerokości elementu.
+- Linia 3: Zamknięcie bloku dla selektora `*`.
+- Linia 4: Pusta linia poprawiająca czytelność kodu.
+- Linia 5: Otwarcie reguły dla `body`.
+- Linia 6: Usunięcie domyślnego marginesu przeglądarki.
+- Linia 7: Ustawienie rodziny czcionek na Arial, Helvetica i zapasowo sans-serif.
+- Linia 8: Ustawienie koloru tła całej strony.
+- Linia 9: Ustawienie podstawowego koloru tekstu.
+- Linia 10: Zamknięcie bloku `body`.
+- Linia 11: Pusta linia poprawiająca czytelność kodu.
+- Linia 12: Otwarcie reguły klasy `.strona`.
+- Linia 13: Ustawienie maksymalnej szerokości głównego kontenera na 1320 pikseli.
+- Linia 14: Wyśrodkowanie kontenera za pomocą `margin: 0 auto`.
+- Linia 15: Dodanie wewnętrznego odstępu 24 piksele.
+- Linia 16: Zamknięcie bloku `.strona`.
+- Linia 17: Pusta linia poprawiająca czytelność kodu.
+- Linia 18: Pierwszy selektor wspólnej grupy stylów: `.naglowek`.
+- Linia 19: Drugi selektor wspólnej grupy stylów: `.legenda`.
+- Linia 20: Trzeci selektor wspólnej grupy stylów: `.karta-statystyki`.
+- Linia 21: Czwarty selektor wspólnej grupy stylów: `.sekcja-samochodow`.
+- Linia 22: Piąty selektor wspólnej grupy stylów: `.karta-panelu`, po którym zaczyna się blok wspólnych właściwości.
+- Linia 23: Ustawienie białego tła dla wszystkich wymienionych elementów.
+- Linia 24: Zaokrąglenie rogów o 20 pikseli.
+- Linia 25: Dodanie delikatnego cienia pod elementami.
+- Linia 26: Zamknięcie wspólnego bloku stylów.
+- Linia 27: Pusta linia poprawiająca czytelność kodu.
+- Linia 28: Otwarcie reguły dla `.naglowek`.
+- Linia 29: Dodanie wewnętrznego odstępu 28 pikseli.
+- Linia 30: Wyśrodkowanie tekstu w nagłówku.
+- Linia 31: Zamknięcie bloku `.naglowek`.
+- Linia 32: Pusta linia poprawiająca czytelność kodu.
+- Linia 33: Otwarcie reguły dla nagłówka `h1` wewnątrz `.naglowek`.
+- Linia 34: Usunięcie marginesu wokół nagłówka.
+- Linia 35: Ustawienie rozmiaru czcionki na 38 pikseli.
+- Linia 36: Zamknięcie reguły `.naglowek h1`.
+- Linia 37: Pusta linia poprawiająca czytelność kodu.
+- Linia 38: Pierwszy selektor grupy: `.sekcja-statystyk`.
+- Linia 39: Drugi selektor grupy: `.sekcja-legendy`, po którym zaczyna się blok wspólnych stylów.
+- Linia 40: Ustawienie górnego marginesu na 20 pikseli.
+- Linia 41: Zamknięcie wspólnego bloku.
+- Linia 42: Pusta linia poprawiająca czytelność kodu.
+- Linia 43: Otwarcie reguły dla `.statystyki`.
+- Linia 44: Ustawienie układu siatki `grid`.
+- Linia 45: Zdefiniowanie czterech równych kolumn.
+- Linia 46: Ustawienie odstępu 16 pikseli pomiędzy kartami statystyk.
+- Linia 47: Zamknięcie bloku `.statystyki`.
+- Linia 48: Pusta linia poprawiająca czytelność kodu.
+- Linia 49: Otwarcie reguły `.karta-statystyki`.
+- Linia 50: Ustawienie układu `flex`.
+- Linia 51: Ustawienie kierunku układu na kolumnowy.
+- Linia 52: Wyśrodkowanie elementów w pionie.
+- Linia 53: Wyśrodkowanie elementów w poziomie.
+- Linia 54: Ustawienie minimalnej wysokości karty na 130 pikseli.
+- Linia 55: Ustawienie paddingu na 18 pikseli.
+- Linia 56: Wyśrodkowanie tekstu.
+- Linia 57: Zamknięcie bloku `.karta-statystyki`.
+- Linia 58: Pusta linia poprawiająca czytelność kodu.
+- Linia 59: Otwarcie reguły `.etykieta-statystyki`.
+- Linia 60: Usunięcie marginesu.
+- Linia 61: Ustawienie szarego koloru tekstu.
+- Linia 62: Zamknięcie bloku `.etykieta-statystyki`.
+- Linia 63: Pusta linia poprawiająca czytelność kodu.
+- Linia 64: Otwarcie reguły `.wartosc-statystyki`.
+- Linia 65: Ustawienie marginesu górnego na 14 pikseli.
+- Linia 66: Ustawienie rozmiaru czcionki na 30 pikseli.
+- Linia 67: Pogrubienie tekstu.
+- Linia 68: Zamknięcie bloku `.wartosc-statystyki`.
+- Linia 69: Pusta linia poprawiająca czytelność kodu.
+- Linia 70: Otwarcie reguły `.uklad-glowny`.
+- Linia 71: Ustawienie układu `grid`.
+- Linia 72: Zdefiniowanie dwóch kolumn o proporcjach 0.95 do 1.55.
+- Linia 73: Ustawienie odstępu 20 pikseli między kolumnami.
+- Linia 74: Dodanie górnego marginesu 20 pikseli.
+- Linia 75: Wyrównanie elementów do góry.
+- Linia 76: Zamknięcie bloku `.uklad-glowny`.
+- Linia 77: Pusta linia poprawiająca czytelność kodu.
+- Linia 78: Otwarcie reguły `.panel-boczny`.
+- Linia 79: Ustawienie układu `grid`.
+- Linia 80: Ustawienie odstępu 20 pikseli pomiędzy kartami w panelu.
+- Linia 81: Zamknięcie bloku `.panel-boczny`.
+- Linia 82: Pusta linia poprawiająca czytelność kodu.
+- Linia 83: Pierwszy selektor grupy: `.legenda`.
+- Linia 84: Drugi selektor grupy: `.sekcja-samochodow`.
+- Linia 85: Trzeci selektor grupy: `.karta-panelu`, po którym zaczyna się wspólny blok stylów.
+- Linia 86: Ustawienie wspólnego paddingu na 22 piksele.
+- Linia 87: Zamknięcie wspólnego bloku.
+- Linia 88: Pusta linia poprawiająca czytelność kodu.
+- Linia 89: Pierwszy selektor grupy nagłówków `h2`: `.legenda h2`.
+- Linia 90: Drugi selektor grupy nagłówków `h2`: `.sekcja-samochodow h2`.
+- Linia 91: Trzeci selektor grupy nagłówków `h2`: `.karta-panelu h2`.
+- Linia 92: Ustawienie marginesu tych nagłówków.
+- Linia 93: Zamknięcie wspólnego bloku nagłówków.
+- Linia 94: Pusta linia poprawiająca czytelność kodu.
+- Linia 95: Otwarcie reguły `.elementy-legendy`.
+- Linia 96: Ustawienie układu siatki.
+- Linia 97: Zdefiniowanie trzech równych kolumn.
+- Linia 98: Ustawienie odstępu 12 pikseli.
+- Linia 99: Zamknięcie bloku `.elementy-legendy`.
+- Linia 100: Pusta linia poprawiająca czytelność kodu.
+- Linia 101: Otwarcie reguły `.element-legendy`.
+- Linia 102: Ustawienie układu `flex`.
+- Linia 103: Wyśrodkowanie elementów w pionie.
+- Linia 104: Ustawienie odstępu 10 pikseli między ikoną a tekstem.
+- Linia 105: Ustawienie paddingu 12 pikseli.
+- Linia 106: Zaokrąglenie rogów o 14 pikseli.
+- Linia 107: Ustawienie bardzo jasnego tła.
+- Linia 108: Zamknięcie bloku `.element-legendy`.
+- Linia 109: Pusta linia poprawiająca czytelność kodu.
+- Linia 110: Otwarcie reguły `.kolor-box`.
+- Linia 111: Ustawienie szerokości kolorowego kwadratu na 18 pikseli.
+- Linia 112: Ustawienie wysokości kolorowego kwadratu na 18 pikseli.
+- Linia 113: Zaokrąglenie rogów o 6 pikseli.
+- Linia 114: Ustawienie przezroczystej ramki o grubości 2 pikseli.
+- Linia 115: Zamknięcie bloku `.kolor-box`.
+- Linia 116: Pusta linia poprawiająca czytelność kodu.
+- Linia 117: Otwarcie reguły `.wolny-box`.
+- Linia 118: Ustawienie jasnozielonego tła dla stanu `wolny`.
+- Linia 119: Ustawienie zielonego koloru ramki.
+- Linia 120: Zamknięcie bloku `.wolny-box`.
+- Linia 121: Pusta linia poprawiająca czytelność kodu.
+- Linia 122: Otwarcie reguły `.wybrany-box`.
+- Linia 123: Ustawienie jasnego żółtego tła dla stanu `wybrany`.
+- Linia 124: Ustawienie pomarańczowego koloru ramki.
+- Linia 125: Zamknięcie bloku `.wybrany-box`.
+- Linia 126: Pusta linia poprawiająca czytelność kodu.
+- Linia 127: Otwarcie reguły `.wypozyczony-box`.
+- Linia 128: Ustawienie jasnoczerwonego tła dla stanu `wypożyczony`.
+- Linia 129: Ustawienie czerwonego koloru ramki.
+- Linia 130: Zamknięcie bloku `.wypozyczony-box`.
+- Linia 131: Pusta linia poprawiająca czytelność kodu.
+- Linia 132: Otwarcie reguły `.naglowek-sekcji p`.
+- Linia 133: Usunięcie marginesu akapitu.
+- Linia 134: Ustawienie szarego koloru tekstu.
+- Linia 135: Ustawienie wysokości linii na 1.5.
+- Linia 136: Zamknięcie bloku `.naglowek-sekcji p`.
+- Linia 137: Pusta linia poprawiająca czytelność kodu.
+- Linia 138: Otwarcie reguły `.siatka-samochodow`.
+- Linia 139: Ustawienie układu siatki.
+- Linia 140: Zdefiniowanie dwóch równych kolumn siatki samochodów.
+- Linia 141: Ustawienie odstępu 16 pikseli między kartami samochodów.
+- Linia 142: Ustawienie górnego marginesu 20 pikseli.
+- Linia 143: Zamknięcie bloku `.siatka-samochodow`.
+- Linia 144: Pusta linia poprawiająca czytelność kodu.
+- Linia 145: Otwarcie reguły `.karta-samochodu`.
+- Linia 146: Ustawienie szerokości karty na 100 procent.
+- Linia 147: Dodanie szarej ramki o grubości 2 pikseli.
+- Linia 148: Zaokrąglenie rogów o 18 pikseli.
+- Linia 149: Ustawienie paddingu 16 pikseli.
+- Linia 150: Ustawienie białego tła karty.
+- Linia 151: Dziedziczenie koloru tekstu po elemencie nadrzędnym.
+- Linia 152: Dziedziczenie ustawień czcionki.
+- Linia 153: Wyrównanie tekstu do lewej.
+- Linia 154: Ustawienie kursora wskazującego, że element jest klikalny.
+- Linia 155: Włączenie płynnego przejścia animacji 0.2 sekundy.
+- Linia 156: Zamknięcie bloku `.karta-samochodu`.
+- Linia 157: Pusta linia poprawiająca czytelność kodu.
+- Linia 158: Otwarcie reguły `.karta-samochodu:hover`.
+- Linia 159: Przesunięcie karty lekko do góry po najechaniu myszką.
+- Linia 160: Zamknięcie bloku `hover`.
+- Linia 161: Pusta linia poprawiająca czytelność kodu.
+- Linia 162: Otwarcie reguły `.karta-samochodu.aktywny-podglad`.
+- Linia 163: Dodanie niebieskiego podświetlenia aktywnej karty.
+- Linia 164: Zamknięcie bloku aktywnego podglądu.
+- Linia 165: Pusta linia poprawiająca czytelność kodu.
+- Linia 166: Otwarcie reguły `.stan-wolny`.
+- Linia 167: Jasnozielone tło karty dla stanu wolnego.
+- Linia 168: Zielony kolor obramowania.
+- Linia 169: Zamknięcie bloku `.stan-wolny`.
+- Linia 170: Pusta linia poprawiająca czytelność kodu.
+- Linia 171: Otwarcie reguły `.stan-wybrany`.
+- Linia 172: Jasnożółte tło karty dla stanu wybranego.
+- Linia 173: Pomarańczowy kolor obramowania.
+- Linia 174: Zamknięcie bloku `.stan-wybrany`.
+- Linia 175: Pusta linia poprawiająca czytelność kodu.
+- Linia 176: Otwarcie reguły `.stan-wypozyczony`.
+- Linia 177: Jasnoczerwone tło karty dla stanu wypożyczonego.
+- Linia 178: Czerwony kolor obramowania.
+- Linia 179: Zamknięcie bloku `.stan-wypozyczony`.
+- Linia 180: Pusta linia poprawiająca czytelność kodu.
+- Linia 181: Otwarcie reguły `.mini-belka`.
+- Linia 182: Ustawienie wysokości paska na 12 pikseli.
+- Linia 183: Bardzo mocne zaokrąglenie rogów, które daje kształt kapsuły.
+- Linia 184: Dodanie dolnego marginesu 14 pikseli.
+- Linia 185: Zamknięcie bloku `.mini-belka`.
+- Linia 186: Pusta linia poprawiająca czytelność kodu.
+- Linia 187: Otwarcie reguły `.numer-samochodu`.
+- Linia 188: Usunięcie marginesu.
+- Linia 189: Ustawienie szarego koloru tekstu.
+- Linia 190: Ustawienie rozmiaru czcionki na 14 pikseli.
+- Linia 191: Zamknięcie bloku `.numer-samochodu`.
+- Linia 192: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 193: Otwarcie reguły `.nazwa-samochodu`.
+- Linia 194: Ustawienie marginesu nad i pod nazwą samochodu.
+- Linia 195: Ustawienie rozmiaru czcionki nazwy na 22 piksele.
+- Linia 196: Zamknięcie bloku `.nazwa-samochodu`.
+- Linia 197: Pusta linia poprawiająca czytelność kodu.
+- Linia 198: Otwarcie reguły `.szczegoly-karty`.
+- Linia 199: Ustawienie układu siatki.
+- Linia 200: Ustawienie odstępu 6 pikseli między wierszami szczegółów.
+- Linia 201: Ustawienie ciemniejszego szarego koloru tekstu.
+- Linia 202: Ustawienie wysokości linii na 1.45.
+- Linia 203: Zamknięcie bloku `.szczegoly-karty`.
+- Linia 204: Pusta linia poprawiająca czytelność kodu.
+- Linia 205: Otwarcie reguły `.status-etykieta`.
+- Linia 206: Ustawienie wyświetlania jako `inline-block`.
+- Linia 207: Dodanie górnego marginesu 14 pikseli.
+- Linia 208: Ustawienie wewnętrznego odstępu etykiety.
+- Linia 209: Bardzo mocne zaokrąglenie rogów etykiety.
+- Linia 210: Ustawienie rozmiaru czcionki na 13 pikseli.
+- Linia 211: Pogrubienie tekstu etykiety.
+- Linia 212: Zamknięcie bloku `.status-etykieta`.
+- Linia 213: Pusta linia poprawiająca czytelność kodu.
+- Linia 214: Otwarcie reguły `.status-wolny`.
+- Linia 215: Jasnozielone tło etykiety dla stanu wolnego.
+- Linia 216: Ciemnozielony kolor tekstu.
+- Linia 217: Zamknięcie bloku `.status-wolny`.
+- Linia 218: Pusta linia poprawiająca czytelność kodu.
+- Linia 219: Otwarcie reguły `.status-wybrany`.
+- Linia 220: Jasnożółte tło etykiety dla stanu wybranego.
+- Linia 221: Ciemniejszy pomarańczowo-brązowy kolor tekstu.
+- Linia 222: Zamknięcie bloku `.status-wybrany`.
+- Linia 223: Pusta linia poprawiająca czytelność kodu.
+- Linia 224: Otwarcie reguły `.status-wypozyczony`.
+- Linia 225: Jasnoczerwone tło etykiety dla stanu wypożyczonego.
+- Linia 226: Ciemnoczerwony kolor tekstu.
+- Linia 227: Zamknięcie bloku `.status-wypozyczony`.
+- Linia 228: Pusta linia poprawiająca czytelność kodu.
+- Linia 229: Otwarcie reguły `.podglad-samochodu`.
+- Linia 230: Ustawienie minimalnej wysokości panelu podglądu na 520 pikseli.
+- Linia 231: Zamknięcie bloku `.podglad-samochodu`.
+- Linia 232: Pusta linia poprawiająca czytelność kodu.
+- Linia 233: Otwarcie reguły `.obraz-podgladu`.
+- Linia 234: Ustawienie obrazu jako element blokowy.
+- Linia 235: Ustawienie szerokości obrazu na 100 procent.
+- Linia 236: Ustawienie stałej wysokości obrazu na 260 pikseli.
+- Linia 237: Ustawienie `object-fit: cover`, aby obraz dobrze wypełniał pole.
+- Linia 238: Zaokrąglenie rogów obrazu.
+- Linia 239: Ustawienie zapasowego koloru tła pod obrazem.
+- Linia 240: Zamknięcie bloku `.obraz-podgladu`.
+- Linia 241: Pusta linia poprawiająca czytelność kodu.
+- Linia 242: Otwarcie reguły `.szczegoly-podgladu`.
+- Linia 243: Ustawienie górnego paddingu 18 pikseli.
+- Linia 244: Zamknięcie bloku `.szczegoly-podgladu`.
+- Linia 245: Pusta linia poprawiająca czytelność kodu.
+- Linia 246: Otwarcie reguły `.wiersz-podgladu`.
+- Linia 247: Ustawienie marginesu nad i pod wierszem informacji.
+- Linia 248: Ustawienie wysokości linii na 1.55.
+- Linia 249: Zamknięcie bloku `.wiersz-podgladu`.
+- Linia 250: Pusta linia poprawiająca czytelność kodu.
+- Linia 251: Otwarcie reguły `.pakiet-info`.
+- Linia 252: Ustawienie górnego marginesu 14 pikseli.
+- Linia 253: Ustawienie szarego koloru tekstu.
+- Linia 254: Ustawienie wysokości linii na 1.6.
+- Linia 255: Zamknięcie bloku `.pakiet-info`.
+- Linia 256: Pusta linia poprawiająca czytelność kodu.
+- Linia 257: Otwarcie reguły `.uwaga-anulowania`.
+- Linia 258: Ustawienie górnego marginesu 14 pikseli.
+- Linia 259: Ustawienie niebieskiego koloru tekstu.
+- Linia 260: Pogrubienie tekstu.
+- Linia 261: Zamknięcie bloku `.uwaga-anulowania`.
+- Linia 262: Pusta linia poprawiająca czytelność kodu.
+- Linia 263: Otwarcie reguły `.formularz`.
+- Linia 264: Ustawienie układu siatki.
+- Linia 265: Ustawienie odstępu 10 pikseli między elementami formularza.
+- Linia 266: Zamknięcie bloku `.formularz`.
+- Linia 267: Pusta linia poprawiająca czytelność kodu.
+- Linia 268: Otwarcie reguły dla `label`.
+- Linia 269: Ustawienie `display: block`.
+- Linia 270: Pogrubienie tekstu etykiet.
+- Linia 271: Zamknięcie bloku `label`.
+- Linia 272: Pusta linia poprawiająca czytelność kodu.
+- Linia 273: Pierwszy selektor wspólnego bloku stylów dla pól formularza: `input`.
+- Linia 274: Drugi selektor wspólnego bloku stylów dla pól formularza: `select`.
+- Linia 275: Ustawienie szerokości pól na 100 procent.
+- Linia 276: Ustawienie paddingu pól formularza.
+- Linia 277: Dodanie cienkiej jasnoszarej ramki.
+- Linia 278: Zaokrąglenie rogów pól o 12 pikseli.
+- Linia 279: Dodanie małego marginesu nad polem.
+- Linia 280: Ustawienie rozmiaru czcionki pól na 15 pikseli.
+- Linia 281: Ustawienie białego tła pól.
+- Linia 282: Zamknięcie wspólnego bloku `input` i `select`.
+- Linia 283: Pusta linia poprawiająca czytelność kodu.
+- Linia 284: Otwarcie reguły dla `button`.
+- Linia 285: Dziedziczenie ustawień czcionki z elementu nadrzędnego.
+- Linia 286: Zamknięcie bloku `button`.
+- Linia 287: Pusta linia poprawiająca czytelność kodu.
+- Linia 288: Pierwszy selektor wspólnego bloku przycisków: `.glowny-przycisk`.
+- Linia 289: Drugi selektor wspólnego bloku przycisków: `.dodatkowy-przycisk`.
+- Linia 290: Usunięcie domyślnej ramki przycisków.
+- Linia 291: Zaokrąglenie rogów przycisków o 12 pikseli.
+- Linia 292: Ustawienie paddingu przycisków.
+- Linia 293: Pogrubienie tekstu przycisków.
+- Linia 294: Ustawienie kursora wskazującego na klikalność.
+- Linia 295: Włączenie płynnych przejść animacji.
+- Linia 296: Zamknięcie wspólnego bloku przycisków.
+- Linia 297: Pusta linia poprawiająca czytelność kodu.
+- Linia 298: Otwarcie reguły `.glowny-przycisk`.
+- Linia 299: Dodanie górnego marginesu 10 pikseli.
+- Linia 300: Ustawienie niebieskiego tła przycisku głównego.
+- Linia 301: Ustawienie białego koloru tekstu.
+- Linia 302: Zamknięcie bloku `.glowny-przycisk`.
+- Linia 303: Pusta linia poprawiająca czytelność kodu.
+- Linia 304: Otwarcie reguły `.dodatkowy-przycisk`.
+- Linia 305: Ustawienie bardzo ciemnego tła przycisku dodatkowego.
+- Linia 306: Ustawienie białego koloru tekstu.
+- Linia 307: Zamknięcie bloku `.dodatkowy-przycisk`.
+- Linia 308: Pusta linia poprawiająca czytelność kodu.
+- Linia 309: Pierwszy selektor bloku `hover`: `.glowny-przycisk:hover`.
+- Linia 310: Drugi selektor bloku `hover`: `.dodatkowy-przycisk:hover`.
+- Linia 311: Zmniejszenie krycia do 0.9 po najechaniu myszką.
+- Linia 312: Zamknięcie bloku `hover`.
+- Linia 313: Pusta linia poprawiająca czytelność kodu.
+- Linia 314: Otwarcie reguły `.przyciski-anulowania`.
+- Linia 315: Ustawienie układu siatki.
+- Linia 316: Ustawienie odstępu 10 pikseli między przyciskami.
+- Linia 317: Dodanie górnego marginesu 14 pikseli.
+- Linia 318: Zamknięcie bloku `.przyciski-anulowania`.
+- Linia 319: Pusta linia poprawiająca czytelność kodu.
+- Linia 320: Otwarcie reguły `.informacja-o-anulowaniu`.
+- Linia 321: Ustawienie marginesu nad tekstem informacyjnym.
+- Linia 322: Ustawienie szarego koloru tekstu.
+- Linia 323: Ustawienie wysokości linii na 1.5.
+- Linia 324: Zamknięcie bloku `.informacja-o-anulowaniu`.
+- Linia 325: Pusta linia poprawiająca czytelność kodu.
+- Linia 326: Otwarcie reguły `.komunikat`.
+- Linia 327: Ustawienie paddingu komunikatu.
+- Linia 328: Zaokrąglenie rogów komunikatu.
+- Linia 329: Pogrubienie tekstu komunikatu.
+- Linia 330: Ustawienie wysokości linii na 1.5.
+- Linia 331: Zamknięcie bloku `.komunikat`.
+- Linia 332: Pusta linia poprawiająca czytelność kodu.
+- Linia 333: Otwarcie reguły `.komunikat-info`.
+- Linia 334: Ustawienie jasnoniebieskiego tła komunikatu informacyjnego.
+- Linia 335: Ustawienie ciemnoniebieskiego koloru tekstu.
+- Linia 336: Zamknięcie bloku `.komunikat-info`.
+- Linia 337: Pusta linia poprawiająca czytelność kodu.
+- Linia 338: Otwarcie reguły `.komunikat-sukces`.
+- Linia 339: Ustawienie jasnozielonego tła komunikatu sukcesu.
+- Linia 340: Ustawienie ciemnozielonego koloru tekstu.
+- Linia 341: Zamknięcie bloku `.komunikat-sukces`.
+- Linia 342: Pusta linia poprawiająca czytelność kodu.
+- Linia 343: Otwarcie reguły `.komunikat-blad`.
+- Linia 344: Ustawienie jasnoczerwonego tła komunikatu błędu.
+- Linia 345: Ustawienie ciemnoczerwonego koloru tekstu.
+- Linia 346: Zamknięcie bloku `.komunikat-blad`.
+- Linia 347: Pusta linia poprawiająca czytelność kodu.
+- Linia 348: Otwarcie bloku `@media (max-width: 1080px)`.
+- Linia 349: Pierwszy selektor grupy w media query: `.uklad-glowny`.
+- Linia 350: Drugi selektor grupy w media query: `.statystyki`.
+- Linia 351: Trzeci selektor grupy w media query: `.elementy-legendy`.
+- Linia 352: Ustawienie dwóch kolumn siatki dla tych elementów na ekranach do 1080 pikseli szerokości.
+- Linia 353: Zamknięcie wspólnego bloku wewnątrz media query.
+- Linia 354: Pusta linia poprawiająca czytelność kodu.
+- Linia 355: Otwarcie dodatkowej reguły `.uklad-glowny` wewnątrz media query.
+- Linia 356: Zmiana układu głównego na jedną kolumnę.
+- Linia 357: Zamknięcie tej reguły.
+- Linia 358: Zamknięcie bloku `@media (max-width: 1080px)`.
+- Linia 359: Pusta linia poprawiająca czytelność kodu.
+- Linia 360: Otwarcie bloku `@media (max-width: 760px)`.
+- Linia 361: Otwarcie reguły `.strona` wewnątrz tego media query.
+- Linia 362: Zmniejszenie paddingu strony do 16 pikseli na mniejszych ekranach.
+- Linia 363: Zamknięcie reguły `.strona`.
+- Linia 364: Pusta linia poprawiająca czytelność kodu.
+- Linia 365: Otwarcie reguły `.naglowek h1` dla małych ekranów.
+- Linia 366: Zmniejszenie rozmiaru tytułu do 30 pikseli.
+- Linia 367: Zamknięcie tej reguły.
+- Linia 368: Pusta linia poprawiająca czytelność kodu.
+- Linia 369: Pierwszy selektor grupy: `.statystyki`.
+- Linia 370: Drugi selektor grupy: `.elementy-legendy`.
+- Linia 371: Trzeci selektor grupy: `.siatka-samochodow`.
+- Linia 372: Ustawienie jednej kolumny dla tych siatek na małych ekranach.
+- Linia 373: Zamknięcie wspólnego bloku.
+- Linia 374: Pusta linia poprawiająca czytelność kodu.
+- Linia 375: Otwarcie reguły `.obraz-podgladu`.
+- Linia 376: Zmniejszenie wysokości obrazu podglądu do 220 pikseli.
+- Linia 377: Zamknięcie tej reguły.
+- Linia 378: Zamknięcie bloku `@media (max-width: 760px)`.
+- Linia 379: Pusta linia na końcu pliku.
+
+## script.js
+
+- Linia 1: Komentarz informujący, że w tym miejscu przechowywane są dane wszystkich samochodów.
+- Linia 2: Deklaracja stałej tablicy `samochody` i otwarcie tej tablicy.
+- Linia 3: Otwarcie pierwszego obiektu reprezentującego pierwszy samochód.
+- Linia 4: Właściwość `id` z numerem 1.
+- Linia 5: Właściwość `nazwa` z nazwą `Nissan Skyline GT-R R34`.
+- Linia 6: Właściwość `typ` z wartością `sportowy`.
+- Linia 7: Właściwość `rok` z rokiem produkcji 1999.
+- Linia 8: Właściwość `moc` z wartością `280 KM`.
+- Linia 9: Właściwość `moment` z wartością `392 Nm`.
+- Linia 10: Właściwość `silnik` z opisem `2.6 l twin turbo`.
+- Linia 11: Właściwość `skrzynia` z wartością `manualna`.
+- Linia 12: Właściwość `cena` z wartością liczbową 950.
+- Linia 13: Właściwość `kolor` z kodem koloru `#0057d9`.
+- Linia 14: Właściwość `opis` z dłuższym opisem pierwszego samochodu.
+- Linia 15: Właściwość `zdjecie` ze ścieżką do zdjęcia samochodu.
+- Linia 16: Właściwość `stan` ustawiona na `wolny`.
+- Linia 17: Właściwość `klient` ustawiona jako pusty tekst.
+- Linia 18: Właściwość `pakiet` ustawiona jako pusty tekst.
+- Linia 19: Zamknięcie pierwszego obiektu i przecinek oddzielający go od kolejnego.
+- Linia 173: Zamknięcie całej tablicy `samochody`.
+
+- Linia 174: Pusta linia poprawiająca czytelność kodu.
+- Linia 175: Komentarz informujący, że poniżej zapisane są rodzaje wypożyczenia i ich ceny.
+- Linia 176: Otwarcie obiektu `rodzajeWypozyczenia`.
+- Linia 177: Początek konfiguracji pakietu `standard`.
+- Linia 178: Nazwa pakietu standard wyświetlana użytkownikowi.
+- Linia 179: Mnożnik ceny dla pakietu standard równy 1.
+- Linia 180: Zamknięcie obiektu `standard`.
+- Linia 181: Początek konfiguracji pakietu `weekend`.
+- Linia 182: Nazwa pakietu weekend.
+- Linia 183: Mnożnik ceny dla pakietu weekend równy 1.8.
+- Linia 184: Zamknięcie obiektu `weekend`.
+- Linia 185: Początek konfiguracji pakietu `premium`.
+- Linia 186: Nazwa pakietu premium.
+- Linia 187: Mnożnik ceny dla pakietu premium równy 2.6.
+- Linia 188: Zamknięcie obiektu `premium`.
+- Linia 189: Zamknięcie całego obiektu `rodzajeWypozyczenia`.
+- Linia 190: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 191: Komentarz wyjaśniający, że kolejne stałe pobierają elementy strony potrzebne do działania aplikacji.
+- Linia 192: Pobranie kontenera listy samochodów i zapisanie go do zmiennej `listaSamochodow`.
+- Linia 193: Pobranie kontenera podglądu samochodu i zapisanie do zmiennej `podgladSamochodu`.
+- Linia 194: Pobranie formularza wypożyczenia do zmiennej `formularzWypozyczenia`.
+- Linia 195: Pobranie pola imienia lub nazwy rezerwacji do zmiennej `nazwaKlienta`.
+- Linia 196: Pobranie listy wyboru rodzaju wypożyczenia do zmiennej `rodzajWypozyczenia`.
+- Linia 197: Pobranie elementu wyświetlającego liczbę wolnych samochodów.
+- Linia 198: Pobranie elementu wyświetlającego liczbę wybranych samochodów.
+- Linia 199: Pobranie elementu wyświetlającego liczbę wypożyczonych samochodów.
+- Linia 200: Pobranie elementu wyświetlającego łączną cenę.
+- Linia 201: Pobranie elementu komunikatu dla użytkownika.
+- Linia 202: Pobranie pola z numerem samochodu do anulowania.
+- Linia 203: Pobranie przycisku anulowania po numerze.
+- Linia 204: Pobranie elementu z informacją pomocniczą o anulowaniu.
+- Linia 205: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 206: Utworzenie zmiennej `idPodgladu` z wartością 1, która określa, który samochód jest aktualnie pokazany w podglądzie.
+- Linia 207: Pusta linia poprawiająca czytelność kodu.
+- Linia 208: Komentarz mówiący, że poniższa funkcja odświeża cały widok po zmianach.
+- Linia 209: Deklaracja funkcji `odswiezWidok`.
+- Linia 210: Wywołanie funkcji `rysujSamochody`, która rysuje listę samochodów.
+- Linia 211: Wywołanie funkcji `pokazPodgladSamochodu`, która aktualizuje panel podglądu.
+- Linia 212: Wywołanie funkcji `aktualizujStatystyki`, która przelicza liczby i cenę.
+- Linia 213: Wywołanie funkcji `aktualizujInformacjeOAnulowaniu`, która aktualizuje tekst pomocy.
+- Linia 214: Zamknięcie funkcji `odswiezWidok`.
+- Linia 215: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 216: Deklaracja funkcji `rysujSamochody`, która buduje karty samochodów w HTML.
+- Linia 217: Wyczyszczenie kontenera `listaSamochodow`, aby można było go narysować od nowa.
+- Linia 218: Pusta linia poprawiająca czytelność kodu.
+- Linia 219: Początek pętli `for`, która przechodzi po wszystkich samochodach z tablicy.
+- Linia 220: Pobranie aktualnie przetwarzanego samochodu do zmiennej `samochod`.
+- Linia 221: Utworzenie nowego elementu `button`, który będzie kartą samochodu.
+- Linia 222: Zbudowanie początkowego zestawu klas CSS dla karty samochodu.
+- Linia 223: Utworzenie pustego tekstu `dodatkowaInformacja`, który później może zostać uzupełniony.
+- Linia 224: Pusta linia poprawiająca czytelność kodu.
+- Linia 225: Sprawdzenie, czy aktualny samochód jest tym samym, który ma być pokazany w podglądzie.
+- Linia 226: Dodanie klasy `aktywny-podglad` do karty, jeśli warunek jest spełniony.
+- Linia 227: Zamknięcie bloku `if` sprawdzającego aktywny podgląd.
+- Linia 228: Pusta linia poprawiająca czytelność kodu.
+- Linia 229: Sprawdzenie, czy samochód ma stan `wypozyczony`.
+- Linia 230: Rozpoczęcie budowania dodatkowego fragmentu HTML z informacją o wypożyczeniu.
+- Linia 231: Dodanie informacji, kto wypożycza dany samochód.
+- Linia 232: Dodanie informacji o wybranym pakiecie wypożyczenia.
+- Linia 233: Zamknięcie bloku `if` dla samochodu wypożyczonego.
+- Linia 234: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 235: Ustawienie typu przycisku na `button`, aby nie wysyłał formularza.
+- Linia 236: Przypisanie obliczonych klas CSS do karty samochodu.
+- Linia 237: Rozpoczęcie składania kodu HTML wewnątrz karty samochodu.
+- Linia 238: Dodanie kolorowego paska z gradientem opartym o kolor auta.
+- Linia 239: Dodanie wiersza z numerem samochodu.
+- Linia 240: Dodanie nazwy samochodu jako nagłówka `h3`.
+- Linia 241: Otwarcie kontenera ze szczegółami karty.
+- Linia 242: Dodanie wiersza z typem samochodu.
+- Linia 243: Dodanie wiersza z rokiem produkcji.
+- Linia 244: Dodanie wiersza z mocą samochodu.
+- Linia 245: Dodanie wiersza z momentem obrotowym.
+- Linia 246: Dodanie wiersza z opisem silnika.
+- Linia 247: Dodanie wiersza z rodzajem skrzyni biegów.
+- Linia 248: Dodanie wiersza z ceną bazową po sformatowaniu funkcją `formatujCene`.
+- Linia 249: Dodanie wcześniej przygotowanego fragmentu `dodatkowaInformacja`.
+- Linia 250: Zamknięcie kontenera ze szczegółami karty.
+- Linia 251: Dodanie etykiety statusu z odpowiednią klasą CSS i tekstem.
+- Linia 252: Pusta linia poprawiająca czytelność kodu.
+- Linia 253: Dodanie obsługi kliknięcia na kartę samochodu.
+- Linia 254: Wywołanie funkcji `obsluzKlikniecieSamochodu` z id klikniętego auta.
+- Linia 255: Zamknięcie funkcji obsługującej kliknięcie.
+- Linia 256: Pusta linia poprawiająca czytelność kodu.
+- Linia 257: Dodanie gotowej karty do kontenera `listaSamochodow`.
+- Linia 258: Zamknięcie pętli `for`.
+- Linia 259: Zamknięcie funkcji `rysujSamochody`.
+
+- Linia 260: Pusta linia poprawiająca czytelność kodu.
+- Linia 261: Komentarz wyjaśniający, że kliknięcie zmienia stan auta albo pokazuje informację o anulowaniu.
+- Linia 262: Deklaracja funkcji `obsluzKlikniecieSamochodu` z parametrem `idSamochodu`.
+- Linia 263: Pobranie samochodu z tablicy na podstawie przekazanego identyfikatora.
+- Linia 264: Pusta linia poprawiająca czytelność kodu.
+- Linia 265: Sprawdzenie, czy samochód został znaleziony.
+- Linia 266: Natychmiastowe zakończenie funkcji, jeśli samochód nie istnieje.
+- Linia 267: Zamknięcie bloku `if` sprawdzającego brak samochodu.
+- Linia 268: Pusta linia poprawiająca czytelność kodu.
+- Linia 269: Ustawienie `idPodgladu` na id klikniętego samochodu.
+- Linia 270: Pusta linia poprawiająca czytelność kodu.
+- Linia 271: Sprawdzenie, czy samochód ma stan `wolny`.
+- Linia 272: Sprawdzenie, czy liczba samochodów wybranych nie przekroczyła limitu 5.
+- Linia 273: Pokazanie komunikatu błędu o maksymalnie 5 samochodach.
+- Linia 274: Odświeżenie widoku po pokazaniu komunikatu.
+- Linia 275: Zakończenie funkcji, aby nie dopuścić do wybrania kolejnego auta.
+- Linia 276: Zamknięcie wewnętrznego bloku `if` sprawdzającego limit.
+- Linia 277: Pusta linia poprawiająca czytelność kodu.
+- Linia 278: Zmiana stanu samochodu z `wolny` na `wybrany`.
+- Linia 279: Wyświetlenie komunikatu sukcesu o dodaniu auta do wypożyczenia.
+- Linia 280: Początek gałęzi `else if` dla samochodu już wybranego.
+- Linia 281: Zmiana stanu samochodu z `wybrany` z powrotem na `wolny`.
+- Linia 282: Wyświetlenie komunikatu informacyjnego o odznaczeniu auta.
+- Linia 283: Początek gałęzi `else if` dla samochodu już wypożyczonego.
+- Linia 284: Wyświetlenie komunikatu, że anulowanie należy wykonać po numerze samochodu.
+- Linia 285: Zamknięcie całego bloku `if else if`.
+- Linia 286: Pusta linia poprawiająca czytelność kodu.
+- Linia 287: Wywołanie funkcji `odswiezWidok`, aby po zmianie stanu odrysować interfejs.
+- Linia 288: Zamknięcie funkcji `obsluzKlikniecieSamochodu`.
+- Linia 289: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 290: Deklaracja funkcji `pobierzSamochodPoId`.
+- Linia 291: Początek pętli przechodzącej po wszystkich samochodach.
+- Linia 292: Porównanie id aktualnego samochodu z szukanym id.
+- Linia 293: Zwrócenie znalezionego samochodu, jeśli warunek jest spełniony.
+- Linia 294: Zamknięcie bloku `if`.
+- Linia 295: Zamknięcie pętli `for`.
+- Linia 296: Pusta linia poprawiająca czytelność kodu.
+- Linia 297: Zwrócenie wartości `null`, jeśli samochód nie został znaleziony.
+- Linia 298: Zamknięcie funkcji `pobierzSamochodPoId`.
+- Linia 299: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 300: Deklaracja funkcji `pobierzTekstStanu`.
+- Linia 301: Sprawdzenie, czy stan to `wolny`.
+- Linia 302: Zwrócenie tekstu `wolny`.
+- Linia 303: Zamknięcie bloku `if`.
+- Linia 304: Pusta linia poprawiająca czytelność kodu.
+- Linia 305: Sprawdzenie, czy stan to `wybrany`.
+- Linia 306: Zwrócenie tekstu `wybrany`.
+- Linia 307: Zamknięcie bloku `if`.
+- Linia 308: Pusta linia poprawiająca czytelność kodu.
+- Linia 309: Zwrócenie tekstu `wypożyczony` dla wszystkich pozostałych przypadków.
+- Linia 310: Zamknięcie funkcji `pobierzTekstStanu`.
+
+- Linia 311: Pusta linia poprawiająca czytelność kodu.
+- Linia 312: Deklaracja funkcji `pobierzKlaseKarty`.
+- Linia 313: Sprawdzenie, czy stan to `wolny`.
+- Linia 314: Zwrócenie klasy CSS `stan-wolny`.
+- Linia 315: Zamknięcie bloku `if`.
+- Linia 316: Pusta linia poprawiająca czytelność kodu.
+- Linia 317: Sprawdzenie, czy stan to `wybrany`.
+- Linia 318: Zwrócenie klasy CSS `stan-wybrany`.
+- Linia 319: Zamknięcie bloku `if`.
+- Linia 320: Pusta linia poprawiająca czytelność kodu.
+- Linia 321: Zwrócenie klasy `stan-wypozyczony` dla pozostałych przypadków.
+- Linia 322: Zamknięcie funkcji `pobierzKlaseKarty`.
+
+- Linia 323: Pusta linia poprawiająca czytelność kodu.
+- Linia 324: Deklaracja funkcji `pobierzKlaseStatusu`.
+- Linia 325: Sprawdzenie, czy stan to `wolny`.
+- Linia 326: Zwrócenie klasy CSS `status-wolny`.
+- Linia 327: Zamknięcie bloku `if`.
+- Linia 328: Pusta linia poprawiająca czytelność kodu.
+- Linia 329: Sprawdzenie, czy stan to `wybrany`.
+- Linia 330: Zwrócenie klasy CSS `status-wybrany`.
+- Linia 331: Zamknięcie bloku `if`.
+- Linia 332: Pusta linia poprawiająca czytelność kodu.
+- Linia 333: Zwrócenie klasy CSS `status-wypozyczony` dla pozostałych przypadków.
+- Linia 334: Zamknięcie funkcji `pobierzKlaseStatusu`.
+
+- Linia 335: Pusta linia poprawiająca czytelność kodu.
+- Linia 336: Deklaracja funkcji `pobierzNazwePakietu`.
+- Linia 337: Sprawdzenie, czy w obiekcie `rodzajeWypozyczenia` istnieje wpis dla podanego rodzaju.
+- Linia 338: Zwrócenie nazwy pakietu z obiektu konfiguracyjnego.
+- Linia 339: Zamknięcie bloku `if`.
+- Linia 340: Pusta linia poprawiająca czytelność kodu.
+- Linia 341: Zwrócenie tekstu `brak`, jeśli nie znaleziono pakietu.
+- Linia 342: Zamknięcie funkcji `pobierzNazwePakietu`.
+- Linia 343: Pusta linia poprawiająca czytelność kodu.
+- Linia 344: Deklaracja funkcji `formatujCene`.
+- Linia 345: Sformatowanie liczby do dwóch miejsc po przecinku i dopisanie jednostki `zł`.
+- Linia 346: Zamknięcie funkcji `formatujCene`.
+
+- Linia 347: Pusta linia poprawiająca czytelność kodu.
+- Linia 348: Komentarz wyjaśniający, że kolejna funkcja pokazuje zdjęcie i dane samochodu.
+- Linia 349: Deklaracja funkcji `pokazPodgladSamochodu`.
+- Linia 350: Pobranie obiektu samochodu na podstawie zmiennej `idPodgladu`.
+- Linia 351: Pusta linia poprawiająca czytelność kodu.
+- Linia 352: Sprawdzenie, czy nie udało się znaleźć samochodu.
+- Linia 353: Wstawienie do kontenera podglądu komunikatu o braku danych samochodu.
+- Linia 354: Przerwanie działania funkcji przez `return`.
+- Linia 355: Zamknięcie bloku `if`.
+- Linia 356: Utworzenie domyślnego tekstu informującego, że samochód nie jest wypożyczony.
+- Linia 357: Pusta linia poprawiająca czytelność kodu.
+- Linia 358: Sprawdzenie, czy samochód jest wypożyczony.
+- Linia 359: Rozpoczęcie budowania tekstu HTML z informacją o kliencie i pakiecie.
+- Linia 360: Dopisanie nazwy klienta i znacznika przejścia do nowej linii.
+- Linia 361: Dopisanie nazwy pakietu z funkcji pomocniczej i zakończenie akapitu.
+- Linia 362: Zamknięcie bloku `if`.
+- Linia 363: Pusta linia poprawiająca czytelność kodu.
+- Linia 364: Rozpoczęcie składania całego kodu HTML dla panelu podglądu.
+- Linia 365: Dodanie znacznika `img` ze zdjęciem i tekstem alternatywnym.
+- Linia 366: Otwarcie kontenera `szczegoly-podgladu`.
+- Linia 367: Dodanie wiersza z numerem samochodu.
+- Linia 368: Dodanie wiersza z nazwą samochodu.
+- Linia 369: Dodanie wiersza ze stanem samochodu.
+- Linia 370: Dodanie wiersza z typem samochodu.
+- Linia 371: Dodanie wiersza z rokiem produkcji.
+- Linia 372: Dodanie wiersza z mocą.
+- Linia 373: Dodanie wiersza z momentem obrotowym.
+- Linia 374: Dodanie wiersza z pojemnością lub opisem silnika.
+- Linia 375: Dodanie wiersza z rodzajem skrzyni biegów.
+- Linia 376: Dodanie wiersza z ceną bazową po sformatowaniu.
+- Linia 377: Dodanie wiersza z opisem samochodu.
+- Linia 378: Dodanie wcześniej zbudowanego tekstu `szczegolyWypozyczenia`.
+- Linia 379: Zamknięcie kontenera szczegółów podglądu.
+- Linia 380: Zamknięcie funkcji `pokazPodgladSamochodu`.
+
+- Linia 381: Pusta linia poprawiająca czytelność kodu.
+- Linia 382: Deklaracja funkcji `aktualizujStatystyki`.
+- Linia 383: Policzenie liczby samochodów wolnych.
+- Linia 384: Policzenie liczby samochodów wybranych.
+- Linia 385: Policzenie liczby samochodów wypożyczonych.
+- Linia 386: Policzenie łącznej ceny wybranych samochodów.
+- Linia 387: Pusta linia poprawiająca czytelność kodu.
+- Linia 388: Wpisanie liczby wolnych samochodów do odpowiedniego elementu HTML.
+- Linia 389: Wpisanie liczby wybranych samochodów do odpowiedniego elementu HTML.
+- Linia 390: Wpisanie liczby wypożyczonych samochodów do odpowiedniego elementu HTML.
+- Linia 391: Wpisanie łącznej ceny do odpowiedniego elementu HTML.
+- Linia 392: Zamknięcie funkcji `aktualizujStatystyki`.
+
+- Linia 393: Pusta linia poprawiająca czytelność kodu.
+- Linia 394: Deklaracja funkcji `policzSamochodyZeStanem`.
+- Linia 395: Utworzenie licznika z początkową wartością 0.
+- Linia 396: Pusta linia poprawiająca czytelność kodu.
+- Linia 397: Początek pętli przechodzącej po wszystkich samochodach.
+- Linia 398: Sprawdzenie, czy stan aktualnego samochodu odpowiada szukanemu stanowi.
+- Linia 399: Zwiększenie licznika o 1, jeśli warunek jest spełniony.
+- Linia 400: Zamknięcie bloku `if`.
+- Linia 401: Zamknięcie pętli `for`.
+- Linia 402: Pusta linia poprawiająca czytelność kodu.
+- Linia 403: Zwrócenie obliczonej liczby samochodów o danym stanie.
+- Linia 404: Zamknięcie funkcji `policzSamochodyZeStanem`.
+- Linia 405: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 406: Deklaracja funkcji `policzLacznaCeneWybranych`.
+- Linia 407: Utworzenie zmiennej `suma` z wartością początkową 0.
+- Linia 408: Pobranie mnożnika ceny z obiektu `rodzajeWypozyczenia` według aktualnie wybranego pakietu.
+- Linia 409: Pusta linia poprawiająca czytelność kodu.
+- Linia 410: Początek pętli przechodzącej po wszystkich samochodach.
+- Linia 411: Sprawdzenie, czy samochód ma stan `wybrany`.
+- Linia 412: Dodanie do sumy ceny samochodu pomnożonej przez mnożnik wybranego pakietu.
+- Linia 413: Zamknięcie bloku `if`.
+- Linia 414: Zamknięcie pętli `for`.
+- Linia 415: Pusta linia poprawiająca czytelność kodu.
+- Linia 416: Zwrócenie obliczonej sumy cen.
+- Linia 417: Zamknięcie funkcji `policzLacznaCeneWybranych`.
+
+- Linia 418: Pusta linia poprawiająca czytelność kodu.
+- Linia 419: Deklaracja funkcji `aktualizujInformacjeOAnulowaniu`.
+- Linia 420: Ustawienie tekstu pomocniczego w sekcji anulowania wypożyczenia.
+- Linia 421: Zamknięcie funkcji `aktualizujInformacjeOAnulowaniu`.
+- Linia 422: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 423: Deklaracja funkcji `pokazKomunikat` z parametrami `tekst` i `typ`.
+- Linia 424: Ustawienie treści komunikatu na przekazany tekst.
+- Linia 425: Nadanie elementowi komunikatu podstawowej klasy `komunikat`.
+- Linia 426: Pusta linia poprawiająca czytelność kodu.
+- Linia 427: Sprawdzenie, czy typ komunikatu to `sukces`.
+- Linia 428: Dodanie klasy `komunikat-sukces`.
+- Linia 429: Sprawdzenie, czy typ komunikatu to `blad`.
+- Linia 430: Dodanie klasy `komunikat-blad`.
+- Linia 431: Gałąź `else`, czyli pozostałe typy komunikatów.
+- Linia 432: Dodanie klasy `komunikat-info`.
+- Linia 433: Zamknięcie bloku `if else if else`.
+- Linia 434: Zamknięcie funkcji `pokazKomunikat`.
+- Linia 435: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 436: Komentarz wyjaśniający, że formularz zmienia wybrane samochody na wypożyczone.
+- Linia 437: Deklaracja funkcji `obsluzWyslanieFormularza` z parametrem `event`.
+- Linia 438: Zablokowanie domyślnego wysłania formularza i przeładowania strony.
+- Linia 439: Pusta linia poprawiająca czytelność kodu.
+- Linia 440: Pobranie tekstu z pola klienta i usunięcie zbędnych spacji na początku i końcu.
+- Linia 441: Pobranie wybranego rodzaju wypożyczenia.
+- Linia 442: Policzenie, ile samochodów jest aktualnie wybranych.
+- Linia 443: Utworzenie zmiennej przechowującej id ostatnio zmodyfikowanego samochodu.
+- Linia 444: Pusta linia poprawiająca czytelność kodu.
+- Linia 445: Sprawdzenie, czy nie wybrano żadnego samochodu.
+- Linia 446: Wyświetlenie komunikatu błędu o konieczności wybrania auta.
+- Linia 447: Przerwanie działania funkcji.
+- Linia 448: Zamknięcie bloku `if`.
+- Linia 449: Pusta linia poprawiająca czytelność kodu.
+- Linia 450: Sprawdzenie, czy pole nazwy klienta jest puste.
+- Linia 451: Wyświetlenie komunikatu błędu o konieczności podania imienia lub nazwy.
+- Linia 452: Przerwanie działania funkcji.
+- Linia 453: Zamknięcie bloku `if`.
+- Linia 454: Pusta linia poprawiająca czytelność kodu.
+- Linia 455: Sprawdzenie, czy nie wybrano rodzaju wypożyczenia.
+- Linia 456: Wyświetlenie komunikatu błędu o konieczności wyboru rodzaju wypożyczenia.
+- Linia 457: Przerwanie działania funkcji.
+- Linia 458: Zamknięcie bloku `if`.
+- Linia 459: Pusta linia poprawiająca czytelność kodu.
+- Linia 460: Sprawdzenie, czy liczba wybranych samochodów nie przekracza 5.
+- Linia 461: Wyświetlenie komunikatu błędu o maksymalnie 5 samochodach.
+- Linia 462: Przerwanie działania funkcji.
+- Linia 463: Zamknięcie bloku `if`.
+- Linia 464: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 465: Początek pętli przechodzącej po wszystkich samochodach.
+- Linia 466: Sprawdzenie, czy aktualny samochód jest w stanie `wybrany`.
+- Linia 467: Zmiana stanu samochodu na `wypozyczony`.
+- Linia 468: Zapisanie klienta do pola `klient`.
+- Linia 469: Zapisanie rodzaju pakietu do pola `pakiet`.
+- Linia 470: Zapamiętanie id ostatnio zmodyfikowanego samochodu.
+- Linia 471: Zamknięcie bloku `if`.
+- Linia 472: Zamknięcie pętli `for`.
+
+- Linia 473: Pusta linia poprawiająca czytelność kodu.
+- Linia 474: Ustawienie `idPodgladu` na id ostatnio wypożyczonego samochodu.
+- Linia 475: Wyczyszczenie pola numeru anulowania.
+- Linia 476: Zresetowanie formularza wypożyczenia.
+- Linia 477: Ustawienie listy wyboru z powrotem na pakiet `standard`.
+- Linia 478: Odświeżenie całego widoku po zapisaniu wypożyczenia.
+- Linia 479: Wyświetlenie komunikatu sukcesu o poprawnym zapisaniu wypożyczenia.
+- Linia 480: Zamknięcie funkcji `obsluzWyslanieFormularza`.
+- Linia 481: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 482: Deklaracja funkcji `anulujWypozyczenieSamochodu`.
+- Linia 483: Zmiana stanu samochodu z `wypozyczony` na `wolny`.
+- Linia 484: Wyczyszczenie pola `klient`.
+- Linia 485: Wyczyszczenie pola `pakiet`.
+- Linia 486: Ustawienie `idPodgladu` na id samochodu, którego wypożyczenie anulowano.
+- Linia 487: Zamknięcie funkcji `anulujWypozyczenieSamochodu`.
+- Linia 488: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 489: Komentarz informujący, że kolejna funkcja anuluje wypożyczenie po podanym numerze.
+- Linia 490: Deklaracja funkcji `obsluzAnulowaniePoNumerze`.
+- Linia 491: Zamiana tekstu z pola numeru na liczbę.
+- Linia 492: Pusta linia poprawiająca czytelność kodu.
+- Linia 493: Sprawdzenie, czy wpisany numer jest niepoprawny lub równy 0.
+- Linia 494: Wyświetlenie komunikatu błędu o konieczności podania poprawnego numeru.
+- Linia 495: Przerwanie działania funkcji.
+- Linia 496: Zamknięcie bloku `if`.
+- Linia 497: Pusta linia poprawiająca czytelność kodu.
+- Linia 498: Pobranie samochodu po wpisanym numerze.
+
+- Linia 499: Pusta linia poprawiająca czytelność kodu.
+- Linia 500: Sprawdzenie, czy nie istnieje samochód o takim numerze.
+- Linia 501: Wyświetlenie komunikatu błędu o nieistniejącym samochodzie.
+- Linia 502: Przerwanie działania funkcji.
+- Linia 503: Zamknięcie bloku `if`.
+- Linia 504: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 505: Sprawdzenie, czy znaleziony samochód nie jest aktualnie wypożyczony.
+- Linia 506: Wyświetlenie komunikatu błędu, że tego auta nie można teraz anulować.
+- Linia 507: Przerwanie działania funkcji.
+- Linia 508: Zamknięcie bloku `if`.
+- Linia 509: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 510: Wywołanie funkcji `anulujWypozyczenieSamochodu` dla znalezionego auta.
+- Linia 511: Wyczyszczenie pola numeru anulowania.
+- Linia 512: Odświeżenie widoku po anulowaniu wypożyczenia.
+- Linia 513: Wyświetlenie komunikatu sukcesu o anulowaniu wypożyczenia.
+- Linia 514: Zamknięcie funkcji `obsluzAnulowaniePoNumerze`.
+- Linia 515: Pusta linia poprawiająca czytelność kodu.
+
+- Linia 516: Dodanie obsługi zdarzenia `submit` do formularza wypożyczenia.
+- Linia 517: Dodanie obsługi zdarzenia `change` do wyboru rodzaju wypożyczenia.
+- Linia 518: Dodanie obsługi kliknięcia do przycisku anulowania po numerze.
+- Linia 519: Pusta linia poprawiająca czytelność kodu.
+- Linia 520: Pierwsze wywołanie funkcji `odswiezWidok`, które inicjalizuje cały interfejs po uruchomieniu skryptu.
