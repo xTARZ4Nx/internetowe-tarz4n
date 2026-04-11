@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zadanie LaTeX - rozwiązania krok po kroku</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>Aplikacja matematyczna (LaTeX)</h1>
+    <p>
+      Strona pokazuje krok po kroku rozwiązania zadań matematycznych.
+      Wzory są wyświetlane przez LaTeX (MathJax).
+    </p>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>1) Układ równań liniowych 2x2 lub 3x3 (metoda Gaussa)</h2>
+      <p class="hint">
+        Wpisz współczynniki równań:
+      </p>
+
+      <div class="row">
+        <label for="gauss-size">Rozmiar układu</label>
+        <select id="gauss-size">
+          <option value="2" selected>2x2</option>
+          <option value="3">3x3</option>
+        </select>
+      </div>
+
+      <form id="gauss-form" class="gauss-form"></form>
+
+      <div id="gauss-output" class="output"></div>
+    </section>
+
+    <section class="panel">
+      <h2>2) Wyznacznik macierzy 2x2 lub 3x3</h2>
+      <div class="row">
+        <label for="det-size">Rozmiar macierzy</label>
+        <select id="det-size">
+          <option value="2">2x2</option>
+          <option value="3" selected>3x3</option>
+        </select>
+      </div>
+
+      <form id="det-form" class="matrix-form"></form>
+      <div id="det-output" class="output"></div>
+    </section>
+
+    <section class="panel">
+      <h2>3) Macierz odwrotna 2x2 lub 3x3</h2>
+      <p class="hint">
+        Najpierw liczymy wyznacznik. Gdy det(A)=0, macierz nie jest odwracalna.
+      </p>
+
+      <div class="row">
+        <label for="inv-size">Rozmiar macierzy</label>
+        <select id="inv-size">
+          <option value="2" selected>2x2</option>
+          <option value="3">3x3</option>
+        </select>
+      </div>
+
+      <form id="inv-form" class="matrix-form"></form>
+
+      <div id="inv-output" class="output"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Autor: Łukasz Sasin 288511</p>
+    <p>Przedmiot: Techniki internetowe</p>
+  </footer>
+</body>
+</html>
