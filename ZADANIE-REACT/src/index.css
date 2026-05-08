@@ -1,0 +1,495 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #f4f7fb;
+  background: #0b1020;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.aplikacja {
+  --tlo-glowne: linear-gradient(180deg, #0b1020 0%, #121b33 100%);
+  --tlo-karty: rgba(15, 23, 42, 0.82);
+  --tlo-karty-mocne: rgba(30, 41, 59, 0.96);
+  --tlo-pola: rgba(15, 23, 42, 0.95);
+  --obramowanie: rgba(148, 163, 184, 0.18);
+  --tekst-glowny: #f8fafc;
+  --tekst-drugi: #cbd5e1;
+  --akcent: #8b5cf6;
+  --akcent-drugi: #38bdf8;
+  --niebezpieczny: #ef4444;
+  --cien: 0 24px 60px rgba(2, 8, 23, 0.42);
+  min-height: 100vh;
+  padding: 24px;
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.16), transparent 30%),
+    radial-gradient(circle at right, rgba(139, 92, 246, 0.2), transparent 24%),
+    var(--tlo-glowne);
+  color: var(--tekst-glowny);
+}
+
+.aplikacja--jasna {
+  --tlo-glowne: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+  --tlo-karty: rgba(255, 255, 255, 0.88);
+  --tlo-karty-mocne: rgba(255, 255, 255, 0.98);
+  --tlo-pola: #ffffff;
+  --obramowanie: rgba(148, 163, 184, 0.28);
+  --tekst-glowny: #0f172a;
+  --tekst-drugi: #475569;
+  --akcent: #7c3aed;
+  --akcent-drugi: #0284c7;
+  --niebezpieczny: #dc2626;
+  --cien: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+.kontener {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.karta-blok,
+.karta-gry,
+.modal-potwierdzenia {
+  background: var(--tlo-karty);
+  border: 1px solid var(--obramowanie);
+  border-radius: 24px;
+  box-shadow: var(--cien);
+  backdrop-filter: blur(14px);
+}
+
+.karta-blok {
+  padding: 24px;
+}
+
+.naglowek {
+  margin-bottom: 24px;
+}
+
+.naglowek__gora,
+.naglowek-bloku {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.naglowek__gora {
+  margin-bottom: 20px;
+}
+
+.naglowek__akcje {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.naglowek__statystyki,
+.siatka-statystyk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+}
+
+.mini-kafelek {
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--tlo-karty-mocne);
+  border: 1px solid var(--obramowanie);
+}
+
+.mini-kafelek span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--tekst-drugi);
+  font-size: 0.92rem;
+}
+
+.mini-kafelek strong {
+  font-size: 1.4rem;
+}
+
+.mini-kafelek--duzy strong {
+  font-size: 1.2rem;
+}
+
+.etykieta-sekcji {
+  margin: 0 0 6px;
+  color: var(--akcent-drugi);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h2 {
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 1.18rem;
+}
+
+.opis-bloku,
+.opis-karty,
+.podsumowanie-filtra {
+  color: var(--tekst-drugi);
+}
+
+.siatka-aplikacji {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  gap: 24px;
+}
+
+.kolumna-boczna,
+.kolumna-glowna {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formularz,
+.formularz__siatka {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formularz__siatka {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.etykieta-pola {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--tekst-drugi);
+}
+
+.etykieta-pola span {
+  font-weight: 600;
+}
+
+.etykieta-pola--pelna {
+  grid-column: 1 / -1;
+}
+
+.etykieta-pola--checkbox {
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+}
+
+.pole-przelacznika {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 4px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--obramowanie);
+  border-radius: 16px;
+  padding: 13px 14px;
+  color: var(--tekst-glowny);
+  background: var(--tlo-pola);
+  outline: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--akcent);
+  transform: translateY(-1px);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.blad-pola {
+  color: #fca5a5;
+}
+
+.grupa-przyciskow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.przycisk {
+  border: none;
+  border-radius: 14px;
+  padding: 12px 16px;
+  transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.przycisk:hover,
+.przycisk-ikona:hover {
+  transform: translateY(-1px);
+}
+
+.przycisk--glowny {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--akcent), var(--akcent-drugi));
+  box-shadow: 0 14px 24px rgba(14, 165, 233, 0.18);
+}
+
+.przycisk--drugi {
+  color: var(--tekst-glowny);
+  background: rgba(148, 163, 184, 0.14);
+  border: 1px solid var(--obramowanie);
+}
+
+.przycisk--niebezpieczny {
+  color: #ffffff;
+  background: linear-gradient(135deg, #f97316, var(--niebezpieczny));
+}
+
+.przycisk--tekst {
+  padding: 0;
+  color: var(--akcent-drugi);
+  background: transparent;
+}
+
+.lista-gier {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.przelacznik {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 62px;
+  height: 34px;
+  flex-shrink: 0;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(71, 85, 105, 0.75);
+  transition: background 0.2s ease;
+}
+
+.przelacznik input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+}
+
+.przelacznik__suwak {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.24);
+  transition: transform 0.2s ease;
+}
+
+.przelacznik--aktywny {
+  background: linear-gradient(135deg, var(--akcent), var(--akcent-drugi));
+}
+
+.przelacznik--aktywny .przelacznik__suwak {
+  transform: translateX(28px);
+}
+
+.karta-gry {
+  padding: 20px;
+}
+
+.karta-gry__naglowek {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.przycisk-ikona {
+  min-width: 48px;
+  min-height: 48px;
+  border: 1px solid var(--obramowanie);
+  border-radius: 16px;
+  background: rgba(148, 163, 184, 0.12);
+  color: #fbbf24;
+  font-size: 1.3rem;
+}
+
+.przycisk-ikona--aktywny {
+  background: rgba(251, 191, 36, 0.16);
+}
+
+.lista-znacznikow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.znacznik {
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.16);
+  color: var(--tekst-glowny);
+  font-size: 0.9rem;
+}
+
+.znacznik--status {
+  background: rgba(34, 197, 94, 0.18);
+}
+
+.szczegoly-gry {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 18px;
+}
+
+.szczegoly-gry div {
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid var(--obramowanie);
+}
+
+.szczegoly-gry dt {
+  margin-bottom: 6px;
+  color: var(--tekst-drugi);
+  font-size: 0.9rem;
+}
+
+.szczegoly-gry dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.grupa-przyciskow--karta .przycisk {
+  flex: 1;
+}
+
+.pusty-stan {
+  padding: 28px 10px 12px;
+  text-align: center;
+}
+
+.tlo-modala {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.72);
+}
+
+.modal-potwierdzenia {
+  width: min(100%, 460px);
+  padding: 24px;
+  background: var(--tlo-karty-mocne);
+}
+
+@media (max-width: 1100px) {
+  .siatka-aplikacji,
+  .lista-gier {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .aplikacja {
+    padding: 14px;
+  }
+
+  .naglowek__gora,
+  .naglowek-bloku,
+  .karta-gry__naglowek {
+    flex-direction: column;
+  }
+
+  .naglowek__akcje {
+    width: 100%;
+  }
+
+  .formularz__siatka,
+  .szczegoly-gry,
+  .naglowek__statystyki,
+  .siatka-statystyk {
+    grid-template-columns: 1fr;
+  }
+
+  .grupa-przyciskow .przycisk,
+  .naglowek__akcje .przycisk {
+    width: 100%;
+  }
+
+  .naglowek__akcje {
+    flex-direction: column;
+  }
+
+  .przelacznik {
+    align-self: flex-end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    transition: none !important;
+  }
+}
